@@ -13,7 +13,7 @@ if ( !is_admin() ) {
 
 	function kanye_js(){
 
-		wp_enqueue_script('kanye-js', plugin_dir_url() .'kanye.js', array(), false, true);
+		wp_enqueue_script('kanye-js', plugin_dir_url( __FILE__ ) .'kanye.js', array(), false, true);
 
 	}
 
