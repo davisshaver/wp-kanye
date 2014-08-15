@@ -13,7 +13,7 @@ if ( !is_admin() ) {
 
 	function kanye_js(){
 
-		wp_enqueue_script('kanye-js', plugin_dir_url( __FILE__ ) .'kanye.js', array(), false, false);
+		wp_enqueue_script('kanye-js', plugins_url( 'kanye.js' , __FILE__ ) , false, false, false);
 
 	}
 
@@ -21,7 +21,7 @@ if ( !is_admin() ) {
 }
 
 function kanye_control() {
-    echo '<script>Kanye.draw();</script>';
+    echo '<script>Kanye.boast();Kanye.draw();</script>';
 }
 
 add_action('wp_footer', 'kanye_control');
