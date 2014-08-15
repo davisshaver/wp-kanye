@@ -21,7 +21,7 @@ if ( !is_admin() ) {
 }
 
 function kanye_control() {
-    echo '<script>Kanye.boast();Kanye.draw();</script>';
+    echo '<script>Kanye.boast();</script>';
 }
 
 add_action('wp_footer', 'kanye_control');
